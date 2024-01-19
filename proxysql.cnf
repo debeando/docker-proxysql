@@ -1,0 +1,16 @@
+datadir="/var/lib/proxysql"
+errorlog="/var/lib/proxysql/proxysql.log"
+
+admin_variables=
+{
+	admin_credentials="admin:admin;radmin:radmin"
+	mysql_ifaces="0.0.0.0:6032"
+}
+
+mysql_variables=
+{
+	threads=2
+	interfaces="0.0.0.0:3306;/tmp/proxysql.sock"
+	monitor_username="monitor"
+	monitor_password="monitor"
+}
